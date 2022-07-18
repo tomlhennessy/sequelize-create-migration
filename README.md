@@ -27,8 +27,12 @@ connected database.
 
 ## Step 1: Generate a migration file
 
-In the terminal, use `sequelize-cli` to generate a new migration. Name this 
-migration `create-color`.
+In the terminal, use `sequelize-cli` to generate a new migration called
+`create-color` using the command below:
+
+```powershell
+npx sequelize migration:generate --name create-color 
+```
 
 When this step is completed you should see a new file created in the 
 __migrations__ directory.
@@ -62,7 +66,12 @@ migration.
 
 ## Step 4: Run the migration
 
-Use `sequelize-cli` to run the migration, creating the `Colors` table.
+Use `sequelize-cli` to run the migration, creating the `Colors` table using the
+following command:
+
+```powershell
+npx dotenv sequelize db:migrate
+```
 
 
 ## Step 5: Validate the table creation
