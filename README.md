@@ -27,7 +27,9 @@ connected database.
 
 ## Step 1: Generate a migration file
 
-In the terminal, use `sequelize-cli` to generate a new migration called
+After executing the setup script, `cd` into the `server` directory.
+
+Then, in the terminal, use `sequelize-cli` to generate a new migration called
 `create-color` using the command below:
 
 ```powershell
